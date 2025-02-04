@@ -51,10 +51,10 @@ d'utiliser les accesseurs et mutateurs pour interagir avec ces attributs.
 Constructeur (__init__) : Le constructeur initialise les attributs _longueur et _largeur avec les valeurs fournies lors de la création
 du rectangle.
 
-Accesseurs (getters) : Les méthodes getLongueur() et getLargeur() permettent d'accéder aux valeurs des attributs _longueur et _largeur
+Accesseurs : Les méthodes getLongueur() et getLargeur() permettent d'accéder aux valeurs des attributs _longueur et _largeur
 respectivement.
 
-Mutateurs (setters) : Les méthodes setLongueur() et setLargeur() permettent de modifier les valeurs des attributs _longueur et _largeur
+Mutateurs : Les méthodes setLongueur() et setLargeur() permettent de modifier les valeurs des attributs _longueur et _largeur
 respectivement.
 
 Méthode afficher : Cette méthode permet d'afficher les dimensions du rectangle dans un format lisible.
