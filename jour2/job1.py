@@ -34,11 +34,11 @@ rectangle.setLongueur(15)
 rectangle.setLargeur(8)
 
 # Affichage des dimensions après modification
-print("\nDimensions après modification :")
+print("\nDimensions apres modification :")
 print(rectangle.afficher())
 
 # Vérification des modifications
-print("\nVérification des modifications :")
+print("\nVerification des modifications :")
 print(f"Longueur : {rectangle.getLongueur()}")
 print(f"Largeur : {rectangle.getLargeur()}")
 
