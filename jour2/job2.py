@@ -4,24 +4,24 @@ class Livre():
         self._auteur = auteur
         self._nombre_pages = nombre_pages
 
-    # Accesseurs (getters)
+    # Accesseurs
     def getTitre(self):
         return self._titre
 
     def getAuteur(self):
         return self._auteur
 
-    def getNombrePages(self):  # Nom corrigé : getNombrePages
+    def getNombrePages(self): 
         return self._nombre_pages
 
-    # Mutateurs (setters)
+    # Mutateurs 
     def setTitre(self, titre):
         self._titre = titre
 
     def setAuteur(self, auteur):
         self._auteur = auteur
 
-    def setNombrePages(self, nombre_pages):  # Nom corrigé : setNombrePages
+    def setNombrePages(self, nombre_pages):  
         if isinstance(nombre_pages, int) and nombre_pages > 0:
             self._nombre_pages = nombre_pages
         else:
@@ -31,7 +31,7 @@ class Livre():
         return f"Titre : {self._titre}, Auteur : {self._auteur}, Nombre de pages : {self._nombre_pages}"
 
 
-# Exemple d'utilisation (inchangé)
+# Exemple d'utilisation 
 
 # Création d'un livre
 livre = Livre("Entre deux mondes", "Norek", 413)
@@ -65,19 +65,24 @@ print(f"Nombre de pages : {livre.getNombrePages()}")  # Nom corrigé : getNombre
 
 
 """
-**Attributs privés **: Les attributs _titre, _auteur et _nombre_pages sont précédés d'un underscore (_). En Python, 
-cela indique une convention pour signifier que ces attributs sont destinés à être utilisés en interne dans la classe.
- Bien qu'ils ne soient pas strictement privés (on peut toujours y accéder de l'extérieur avec livre._titre), il est fortement 
- recommandé de respecter cette convention et d'utiliser les accesseurs et mutateurs pour interagir avec ces attributs.
+Attributs privés : Les attributs _titre, _auteur et _nombre_pages sont précédés d'un underscore (_).
+En Python, cela indique une convention pour signifier que ces attributs sont destinés à être utilisés
+en interne dans la classe. Bien qu'ils ne soient pas strictement privés (on peut toujours y accéder de
+l'extérieur avec livre._titre), il est fortement recommandé de respecter cette convention et d'utiliser
+les accesseurs et mutateurs pour interagir avec ces attributs.
 
-**Constructeur (__init__) **: Le constructeur initialise les attributs avec les valeurs fournies lors de la création du livre.
+Constructeur (__init__) : Le constructeur initialise les attributs avec les valeurs fournies lors de la
+création du livre.
 
-**Accesseurs (getters) **: Les méthodes getTitre(), getAuteur() et getNombrePages() permettent d'accéder aux valeurs des attributs.
+Accesseurs : Les méthodes getTitre(), getAuteur() et getNombrePages() permettent d'accéder aux valeurs
+des attributs.
 
-**Mutateurs (setters) **: Les méthodes setTitre(), setAuteur() et setNombrePages() permettent de modifier les valeurs des attributs.
-La méthode setNombrePages() vérifie si la valeur fournie est un entier positif avant de modifier l'attribut. Si la valeur est invalide,
-un message d'erreur est affiché et l'attribut n'est pas modifié.
+Mutateurs : Les méthodes setTitre(), setAuteur() et setNombrePages() permettent de modifier les valeurs
+des attributs.
 
-**Méthode afficher **: Cette méthode permet d'afficher les informations du livre dans un format lisible.
+La méthode setNombrePages() vérifie si la valeur fournie est un entier positif avant de modifier l'attribut.
+Si la valeur est invalide, un message d'erreur est affiché et l'attribut n'est pas modifié.
+
+Méthode afficher : Cette méthode permet d'afficher les informations du livre dans un format lisible.
 
 """
